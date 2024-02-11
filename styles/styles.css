@@ -1,0 +1,21 @@
+h1{
+    color: red;
+}
+#fruits{
+    color: teal;
+}
+.important-place{
+    color: blueviolet;
+}
+.text{
+    text-align: center;
+}
+.text-size{
+    font-size: 2rem;
+}
+.items{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    background-color: url('../images/jjj.png');
+}

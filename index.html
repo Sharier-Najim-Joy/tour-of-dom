@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <section>
+            <h1>Start to dom</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, magni. Sapiente veritatis quia sunt culpa sed delectus, fuga numquam doloremque.</p>
+        </section>
+    </header>
+    <main id="main-container">
+        <section>
+            <h1>students name</h1>
+            <ul class="items">
+                <li>nahid</li>
+                <li>ridoy</li>
+                <li>khalid</li>
+                <li>joy</li>
+            </ul>
+        </section>
+        <section class="fruits-container">
+            <h1 id="fruits" class="one two three">fruits name</h1>
+            <ul class="items">
+                <li>apple</li>
+                <li>banana</li>
+                <li>carot</li>
+                <li>daliom</li>
+            </ul>
+        </section>
+        <section id="places-container" class="text-size">
+            <h1>places i like</h1>
+            <ul id="places-items" class="items">
+                <li class="important-place">soondarbon</li>
+                <li class="important-place">bandorbon</li>
+                <li class="important-place">katabon</li>
+                <li>salbon</li>
+            </ul>
+        </section>
+    </main>
+    <script src="js/append.js"></script>
+    <script src="js/dom.js"></script>
+    <script>
+        const someLi = document.querySelectorAll('.fruits-container li');
+        for(const li of someLi){
+            // console.log(li);
+        }
+
+        const fruitsItem = document.getElementById('fruits');
+        // kono kisor nam change korajay
+        fruitsItem.innerText = 'fruits item';
+
+        const places = document.getElementsByClassName('important-place')
+        for(const place of places){
+            // console.log(place.innerText);
+        }
+
+        const liCollection = document.getElementsByTagName('li')
+        for(const li of liCollection){
+            // console.log(li.innerText);
+        }
+
+        // console.log('get out');
+        // const student={
+        //     name:'xyz',
+        //     id:12,
+        //     batch:5,
+        //     x:function(time){
+        //         console.log(time,'true');
+        //     }
+        // }
+        
+    </script>
+</body>
+</html>
